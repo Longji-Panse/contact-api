@@ -1,0 +1,22 @@
+-- V2__insert_sample_data.sql
+INSERT INTO contacts (id, name, email, title, phone, address, status, photo_url) VALUES
+         ('1a2b3c4d-1111-2222-3333-444455556666', 'John Doe', 'john.doe@example.com', 'Software Engineer', '08012345678', '12 Rayfield Road, Jos', 'Active', 'https://picsum.photos/seed/john/200'),
+         ('2b3c4d5e-1111-2222-3333-444455556666', 'Jane Smith', 'jane.smith@example.com', 'Project Manager', '08023456789', '5 Old Airport, Jos', 'Active', 'https://picsum.photos/seed/jane/200'),
+         ('3c4d5e6f-1111-2222-3333-444455556666', 'Michael Johnson', 'michael.johnson@example.com', 'Data Analyst', '08034567890', '15 Yakubu Gowon Way, Jos', 'Inactive', 'https://picsum.photos/seed/michael/200'),
+         ('4d5e6f7g-1111-2222-3333-444455556666', 'Sarah Williams', 'sarah.williams@example.com', 'Marketing Officer', '08045678901', '24 Zarmaganda, Jos', 'Active', 'https://picsum.photos/seed/sarah/200'),
+         ('5e6f7g8h-1111-2222-3333-444455556666', 'David Brown', 'david.brown@example.com', 'Sales Rep', '08056789012', '8 Terminus Road, Jos', 'Active', 'https://picsum.photos/seed/david/200'),
+         ('6f7g8h9i-1111-2222-3333-444455556666', 'Emily Davis', 'emily.davis@example.com', 'UI/UX Designer', '08067890123', '20 Rayfield Layout, Jos', 'Active', 'https://picsum.photos/seed/emily/200'),
+         ('7g8h9i0j-1111-2222-3333-444455556666', 'James Miller', 'james.miller@example.com', 'Accountant', '08078901234', '9 British-America, Jos', 'Inactive', 'https://picsum.photos/seed/james/200'),
+         ('8h9i0j1k-1111-2222-3333-444455556666', 'Sophia Wilson', 'sophia.wilson@example.com', 'HR Officer', '08089012345', '10 Fwavwei Street, Jos', 'Active', 'https://picsum.photos/seed/sophia/200'),
+         ('9i0j1k2l-1111-2222-3333-444455556666', 'Chris Taylor', 'chris.taylor@example.com', 'Backend Developer', '08090123456', '17 Tudun Wada, Jos', 'Active', 'https://picsum.photos/seed/chris/200'),
+         ('0j1k2l3m-1111-2222-3333-444455556666', 'Olivia Anderson', 'olivia.anderson@example.com', 'Frontend Developer', '08101234567', '3 Rayfield Crescent, Jos', 'Active', 'https://picsum.photos/seed/olivia/200'),
+         ('a1b2c3d4-1111-2222-3333-444455556666', 'Daniel Thomas', 'daniel.thomas@example.com', 'QA Engineer', '08112345678', '21 Bauchi Road, Jos', 'Inactive', 'https://picsum.photos/seed/daniel/200'),
+         ('b2c3d4e5-1111-2222-3333-444455556666', 'Grace Martin', 'grace.martin@example.com', 'Content Strategist', '08123456789', '13 Lamingo Road, Jos', 'Active', 'https://picsum.photos/seed/grace/200'),
+         ('c3d4e5f6-1111-2222-3333-444455556666', 'Matthew Lee', 'matthew.lee@example.com', 'Mobile Developer', '08134567890', '18 Tudun Wada Extension, Jos', 'Active', 'https://picsum.photos/seed/matthew/200'),
+         ('d4e5f6g7-1111-2222-3333-444455556666', 'Hannah Harris', 'hannah.harris@example.com', 'Business Analyst', '08145678901', '27 Angwan Rukuba, Jos', 'Active', 'https://picsum.photos/seed/hannah/200'),
+         ('e5f6g7h8-1111-2222-3333-444455556666', 'Andrew Clark', 'andrew.clark@example.com', 'DevOps Engineer', '08156789012', '14 Low Cost, Jos', 'Active', 'https://picsum.photos/seed/andrew/200'),
+         ('f6g7h8i9-1111-2222-3333-444455556666', 'Isabella Lewis', 'isabella.lewis@example.com', 'Support Engineer', '08167890123', '25 Hill Station, Jos', 'Active', 'https://picsum.photos/seed/isabella/200'),
+         ('g7h8i9j0-1111-2222-3333-444455556666', 'Benjamin Hall', 'benjamin.hall@example.com', 'Network Admin', '08178901234', '7 Farin Gada, Jos', 'Inactive', 'https://picsum.photos/seed/benjamin/200'),
+         ('h8i9j0k1-1111-2222-3333-444455556666', 'Mia Young', 'mia.young@example.com', 'Research Assistant', '08189012345', '19 Liberty Boulevard, Jos', 'Active', 'https://picsum.photos/seed/mia/200'),
+         ('i9j0k1l2-1111-2222-3333-444455556666', 'Noah Scott', 'noah.scott@example.com', 'IT Support', '08190123456', '6 Dadin Kowa, Jos', 'Active', 'https://picsum.photos/seed/noah/200'),
+         ('j0k1l2m3-1111-2222-3333-444455556666', 'Lily King', 'lily.king@example.com', 'Customer Relations', '08101234568', '16 Zawan, Jos', 'Active', 'https://picsum.photos/seed/lily/200');

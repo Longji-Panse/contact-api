@@ -1,0 +1,23 @@
+name: 'contact-api-infra'
+
+services:
+  contact-db:
+    image: postgres:17
+    container_name: contact-api-db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=contact_api_db
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    mem_limit: 500m
+    volumes:
+      - contact_db_data:/var/lib/postgresql/data
+
+volumes:
+  contact_db_data:

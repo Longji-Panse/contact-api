@@ -1,0 +1,46 @@
+version: '3'
+
+vars:
+  GOOS: "{{default OS .GOOS}}"
+  MVNW: '{{if eq .GOOS "windows"}}mvnw.cmd{{else}}./mvnw{{end}}'
+  DC_DIR: "deployment/docker-compose"
+  INFRA_DC_FILE: "{{.DC_DIR}}/infra.yml"
+
+tasks:
+  default:
+    cmds:
+      - task: start_infra
+
+  # 🟢 Start Postgres infrastructure
+  start_infra:
+    desc: "Start PostgreSQL infrastructure service"
+    cmds:
+      - "docker compose -f {{.INFRA_DC_FILE}} up -d"
+
+  # 🔴 Stop Postgres infrastructure
+  stop_infra:
+    desc: "Stop PostgreSQL infrastructure service"
+    cmds:
+      - "docker compose -f {{.INFRA_DC_FILE}} stop"
+      - "docker compose -f {{.INFRA_DC_FILE}} down"
+
+  # ♻️ Restart Postgres infrastructure
+  restart_infra:
+    desc: "Restart PostgreSQL infrastructure service"
+    cmds:
+      - task: stop_infra
+      - task: sleep
+      - task: start_infra
+
+  # ⏳ Internal sleep utility
+  sleep:
+    internal: true
+    vars:
+      DURATION: '{{default 5 .DURATION}}'
+    cmds:
+      - |
+        {{if eq OS "windows"}}
+          timeout /T {{.DURATION}} /NOBREAK
+        {{else}}
+          sleep {{.DURATION}}
+        {{end}}
